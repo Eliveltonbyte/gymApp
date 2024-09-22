@@ -12,11 +12,17 @@ export function Input({...rest}: Props){
       px="$4"
       borderWidth="$0" 
       borderRadius="$md"
+      $focus={{
+        borderWidth: 1,
+        borderColor: "$gree500"
+
+      }}
       >
         <InputField 
         color="$white"
         fontFamily="$body"
         placeholderTextColor="$gray300"
+        
         
         {...rest} />
     </GluesStackInput>
